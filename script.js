@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
     const mensajes = [
         "Haz Obtenido 1 boleto",
-        "Haz Obtenido 2 boleto",
-        "Haz Obtenido 3 boleto",
-        "Haz Obtenido 4 boleto",
-        "Haz Obtenido 5 boleto",
-        "Haz Obtenido 6 boleto",
+        "Haz Obtenido 2 boletos",
+        "Haz Obtenido 3 boletos",
+        "Haz Obtenido 4 boletos",
+        "Haz Obtenido 5 boletos",
+        "Haz Obtenido 6 boletos",
         "No has obtenido ningún boleto, más suerte para la próxima!",
         "No has obtenido ningún boleto, más suerte para la próxima!",
         "No has obtenido ningún boleto, más suerte para la próxima!"
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const mensajeAleatorio = mensajes[Math.floor(Math.random() * mensajes.length)];
     document.getElementById("mensaje").textContent = mensajeAleatorio;
 
-    if (mensajes.indexOf(mensajeAleatorio) < 5) {
+    if (mensajes.indexOf(mensajeAleatorio) <= 5) {
         const botonContainer = document.getElementById("boton-container");
 
         const botonDiv = document.createElement("div");
